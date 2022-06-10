@@ -1,5 +1,4 @@
 body {
-  width: 1600px;
   font-family: roboto, sans-serif;
   color: #212121;
   background-color: #ffffff;
@@ -10,6 +9,11 @@ h3,
 p {
   margin: 0;
   padding: 0;
+}
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
 }
 img {
   display: block;
@@ -24,17 +28,19 @@ img {
   min-height: 80px;
   border-bottom: 1px solid #ececec;
   margin: 0;
+  padding-top: 24px;
+  padding-bottom: 25px;
 }
 
 .container {
-  display: flex;
   align-items: center;
   width: 1200px;
-  min-height: 80px;
   padding: 0 15px;
-  margin-top: 0;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
+}
+.header-cont {
+  display: flex;
+  align-items: center;
 }
 .header-nav {
   display: flex;
@@ -42,6 +48,7 @@ img {
 }
 .header-logo {
   display: flex;
+  margin-right: 93px;
   font-family: raleway;
   font-weight: 700;
   font-size: 26px;
@@ -52,23 +59,19 @@ img {
 .logo-color {
   color: #2196f3;
 }
-.list {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-}
+
 .header-list {
   display: flex;
-  margin-left: 93px;
 }
-.header-item {
+.header-item:not(last-child) {
   margin-right: 50px;
 }
-.header-item:last-child {
-  margin-right: 0;
+
+.header-info {
+  display: flex;
+  margin-left: auto;
 }
 .header-link {
-  display: block;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -82,7 +85,6 @@ img {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: #757575;
-  margin-left: 331px;
 }
 .header-contacts + .header-contacts {
   margin-left: 50px;
@@ -114,7 +116,7 @@ img {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 30px;
-  width: 696px;
+  max-width: 696px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -125,7 +127,6 @@ img {
 }
 .section-one-btn {
   display: block;
-  margin-top: 30px;
   margin-left: auto;
   margin-right: auto;
   cursor: pointer;
@@ -145,12 +146,11 @@ img {
 .main-section-three {
   background-color: #e5e5e5;
 }
+.main-section-two {
+  padding-top: 94px;
+}
 .section-two-list {
   display: flex;
-  width: 1200px;
-  padding-top: 94px;
-  padding-left: 15px;
-  padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -179,12 +179,10 @@ img {
   color: #757575;
 }
 .main-section-three {
-  padding-left: 215px;
-  padding-right: 215px;
+  padding-top: 94px;
   padding-bottom: 94px;
 }
 .section-three-title {
-  padding-top: 94px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -206,6 +204,7 @@ img {
   background: #f5f4fa;
   padding: 94px 215px;
 }
+
 .team-title {
   font-weight: 700;
   font-size: 36px;
@@ -227,8 +226,13 @@ img {
 .team-item:last-child {
   margin-right: 0;
 }
+.team-signature {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: auto;
+  padding-right: auto;
+}
 .team-member {
-  margin-top: 30px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
@@ -238,7 +242,6 @@ img {
 }
 .team-position {
   margin-top: 10px;
-  padding-bottom: 30px;
   font-weight: 400;
   font-size: 16px;
   line-height: 19px;
@@ -248,11 +251,11 @@ img {
 }
 .footer {
   background: #2f303a;
-  padding-left: 215px;
   padding-top: 60px;
   padding-bottom: 60px;
 }
 .footer-logo {
+  margin-bottom: 20px;
   font-family: 'Raleway';
   font-weight: 700;
   font-size: 26px;
@@ -261,7 +264,6 @@ img {
   color: #ffffff;
 }
 .footer-location {
-  margin-top: 20px;
   font-style: normal;
   font-size: 14px;
   line-height: 1.71;
@@ -279,12 +281,14 @@ img {
 }
 .main-portfolio {
   background: #ffffff;
-  padding: 94px 214px;
+}
+.btn-section {
+  padding-top: 94px;
+  padding-bottom: 50px;
 }
 .portfolio-btn-list {
   display: flex;
   justify-content: center;
-  margin-bottom: 34px;
 }
 .portfolio-btn-item {
   margin-right: 8px;
@@ -314,6 +318,9 @@ img {
   color: #ffffff;
   background-color: #2196f3;
 }
+.project-section {
+  padding-bottom: 94px;
+}
 .projects-list {
   display: flex;
   flex-wrap: wrap;
@@ -323,7 +330,6 @@ img {
   background: #ffffff;
   margin-right: 30px;
   margin-top: 30px;
-  padding-bottom: 20px;
   border: 1px solid #eeeeee;
   border-top: none;
 }
@@ -335,7 +341,7 @@ img {
 }
 
 .signature {
-  margin: 20px 24px;
+  padding: 20px 24px;
 }
 .projects-name {
   margin-bottom: 4px;
