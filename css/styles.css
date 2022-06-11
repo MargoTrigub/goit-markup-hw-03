@@ -143,10 +143,7 @@ img {
   color: #ffffff;
   background-color: #2196f3;
 }
-.main-section-two,
-.main-section-three {
-  background-color: #e5e5e5;
-}
+
 .main-section-two {
   padding-top: 94px;
 }
@@ -203,7 +200,8 @@ img {
 }
 .main-section-team {
   background: #f5f4fa;
-  padding: 94px;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .team-title {
@@ -256,6 +254,7 @@ img {
   padding-bottom: 60px;
 }
 .footer-logo {
+  display: block;
   margin-bottom: 20px;
   font-family: 'Raleway';
   font-weight: 700;
@@ -263,6 +262,9 @@ img {
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: #ffffff;
+}
+.footer-item:not(last-child) {
+  margin-bottom: 9px;
 }
 .footer-location {
   font-style: normal;
@@ -272,7 +274,6 @@ img {
   color: #ffffff;
 }
 .footer-link {
-  margin-top: 9px;
   font-style: normal;
   font-size: 14px;
   line-height: 1.71;
@@ -280,12 +281,18 @@ img {
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
+.footer-link:not(last-child) {
+  margin-bottom: 0;
+}
 .main-portfolio {
   background: #ffffff;
 }
-.btn-section {
+.portfolio-section {
   padding-top: 94px;
-  padding-bottom: 50px;
+  padding-bottom: 94px;
+}
+.portfolio-filter {
+  margin-bottom: 50px;
 }
 .portfolio-btn-list {
   display: flex;
